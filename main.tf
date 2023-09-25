@@ -6,11 +6,3 @@ resource "random_integer" "test-int" {
     trigger = var.trigger
   }
 }
-
-variable trigger {
-    type = number
-}
-
-output int-val {
-    value = random_integer.test-int.result
-}
